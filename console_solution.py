@@ -16,8 +16,8 @@ class ConsoleSolution:
 
         for try_number in range(self.game.tries_left):
             print(f"Try {try_number}.")
-            left_input = list(map(int, input("Select the men to put on the left side:").split()))
-            right_input = list(map(int, input("Select the men to put on the right side:").split()))
+            left_input = list(map(int, input("Select the men to put on the left side:\n").split()))
+            right_input = list(map(int, input("Select the men to put on the right side:\n").split()))
             
             result = self.game.weight(left_input, right_input)
             
@@ -31,8 +31,8 @@ class ConsoleSolution:
         
         print("The scale cannot be used anymore.")
 
-        index = int(input("Which man as a different weight ?"))
-        difference = input("Is he lighter or heavier ?")
+        index = int(input("Which man as a different weight ?\n"))
+        difference = input("Is he lighter or heavier ?\n")
         
         if difference.isnumeric():
             difference = int(difference)

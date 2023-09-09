@@ -6,4 +6,5 @@ class Solution:
         self.game = game
 
     def give_answer(self):
+        return (0, 1)
         pass
